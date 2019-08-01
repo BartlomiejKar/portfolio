@@ -2,15 +2,65 @@
 @import "_variables";
 
 
-html {
-  box-sizing: border-box;
+.about {
+    background-color: red;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.about__img{
+background-color: blue;
+width:120px;
+height: 120px;
+margin-left: 128px;
+margin-top: 128px;
+}
+.about__title {
+    margin-left: 128px;
+    width: 781px;
+height: 168px;
 }
 
-*, *:before, *:after {
-  box-sizing: inherit;
+.skills {
+    background-color: blue;
+}
+.skills__title{
+    margin-left: 128px;
+    margin-right: 128px;
+}
+.skills__article{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+.hr{
+grid-area: 1/1/1/1;
+background: #06C847;
+border-radius: 8px;
+width: 80px;
+height: 4px;
+transform: matrix(1, 0, 0, -1, 0, 0);
+margin-bottom: 4px;
+margin-left:128px;
+}
+.skills__article--title {
+    grid-area: 1/1/1/1;
+    width: 379px;
+    height: 44px;
+    margin-left: 128px;
+    
+   
+
+}
+.skills__list {
+    width: 278px;
+    height: 200px;
+    
 }
 
-body {
-  color: $yellow;
-  background: $violet;
+
+.projects {
+    background-color: yellow;
+}
+.contact {
+    background-color: green;
 }
