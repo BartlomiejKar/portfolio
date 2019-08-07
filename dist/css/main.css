@@ -307,11 +307,8 @@ template {
 [hidden] {
   display: none; }
 
-.about {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-rows: repeat 2, 1fr;
-  grid-template-rows: repeat 2, 1fr; }
+body {
+  border: 10px solid #171F3F; }
 
 .about__me::after {
   content: "";
@@ -333,10 +330,11 @@ template {
 
 .about__title {
   margin-left: 128px;
-  width: 781px; }
+  width: 300px; }
 
 .about__paragraph {
-  margin-left: 128px; }
+  margin-left: 128px;
+  width: 300px; }
 
 .skills__title {
   margin-right: 128px; }
@@ -479,18 +477,45 @@ template {
   margin-right: 5px; }
 
 .contact {
-  background-color: green; }
+  background: #171F3F; }
+
+.contact__div {
+  height: 100%;
+  padding: 1px;
+  color: white; }
 
 .contact__title {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px; }
+  line-height: 44px;
+  margin-top: 128px; }
+
+.contact__title::before {
+  background: #0593FB;
+  border-radius: 8px;
+  content: "";
+  width: 80px;
+  height: 4px;
+  display: block; }
 
 .contact__paragraph {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
   line-height: 36px; }
+
+.contact__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact__icons--image {
+  width: 30px;
+  height: 30px; }
+
+.contact__li {
+  list-style-type: none;
+  margin: 5px; }
 
 /*# sourceMappingURL=main.css.map */
