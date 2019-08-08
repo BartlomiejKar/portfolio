@@ -307,9 +307,6 @@ template {
 [hidden] {
   display: none; }
 
-body {
-  border: 10px solid #171F3F; }
-
 .about__img {
   width: 100.21px;
   height: 100.21px;
@@ -570,5 +567,8 @@ body {
 
 .contact__li {
   list-style-type: none; }
+
+body {
+  border: 10px solid #171F3F; }
 
 /*# sourceMappingURL=main.css.map */

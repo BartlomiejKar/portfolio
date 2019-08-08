@@ -1,0 +1,44 @@
+.contact {
+background: #171F3F;
+}
+.contact__div{
+height: 100%;
+padding:1px;
+color: white;
+}
+.contact__title {
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 44px;
+margin-top: 128px;
+margin-left: 128px;
+}
+.contact__title::before {
+background: #0593FB;
+border-radius: 8px;
+content: "";
+width: 80px;
+height: 4px;
+display:block;
+margin-bottom: 24px;
+}
+.contact__paragraph {
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 36px;
+margin-left: 128px;
+}
+.contact__icons{
+display: flex;
+margin-left: 128px;
+padding: 0;
+}
+.contact__icons--image{
+width:35px;
+height: 35px;
+}
+.contact__li{
+list-style-type: none;
+}
