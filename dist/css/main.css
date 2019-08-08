@@ -361,12 +361,12 @@ template {
   margin-bottom: 20px;
   height: 208px; }
 
-.skills__article--title {
+.skills__article-title {
   width: 379px;
   height: 44px;
   margin-left: 8px; }
 
-.skills__article--title::before, .knowing__title::before, .learn__title::before {
+.skills__article-title::before, .knowing__title::before, .learn__title::before {
   content: '';
   background-color: #2251CC;
   border-radius: 8px;
@@ -384,7 +384,7 @@ template {
   list-style-type: none;
   margin-top: 40px; }
 
-.skills__list--element, .knowing__list--element, .learn__list--element {
+.skills__list-element, .knowing__list-element, .learn__list-element {
   padding: 2px;
   margin-left: 5px;
   display: -webkit-box;
@@ -392,7 +392,7 @@ template {
   display: flex;
   text-align: center; }
 
-.skills__list--element::before {
+.skills__list-element::before {
   content: "";
   background-image: url("../assets/img/check-circle.svg");
   width: 18px;
@@ -427,14 +427,14 @@ template {
   list-style-type: none;
   margin-top: 40px; }
 
-.knowing__list--element::before {
+.knowing__list-element::before {
   content: "";
   background-image: url("../assets/img/red checked.svg");
   width: 16px;
   height: 16px;
   margin-right: 12px; }
 
-.learn__list--element::before {
+.learn__list-element::before {
   content: "";
   background-image: url("../assets/img/green circle.svg");
   width: 16px;
@@ -514,7 +514,7 @@ template {
 .project__description {
   height: 100px; }
 
-.project__div--title {
+.project__div-title {
   font-size: 36px; }
 
 .project__footer {
@@ -529,14 +529,14 @@ template {
           box-shadow: 8px 6px 16px rgba(64, 91, 119, 0.19);
   padding: .625rem 2rem; }
 
-.project__footer--demo {
+.project__footer-demo {
   text-decoration: none;
   margin-left: 5px;
   margin-right: 5px;
   border-right: 2px solid #CBD2D9;
   padding: 5px; }
 
-.project__footer--github {
+.project__footer-github {
   text-decoration: none;
   padding: 5px; }
 
@@ -579,7 +579,7 @@ template {
   margin-left: 128px;
   padding: 0; }
 
-.contact__icons--image {
+.contact__icons-image {
   width: 35px;
   height: 35px; }
 
