@@ -34,9 +34,9 @@ fetch("https://api.github.com/users/BartlomiejKar/repos?sort=created")
       </div>
       <footer class="project__footer">
       <img src="../assets/img/Demo Icon.svg" alt ="demo" class="demo">
-    <a class="project__footer--link" href="${item.homepage}" target="_blank" rel="nofollow noreferrer">Demo</a>
+    <a class="project__footer--demo" href="${item.homepage}" target="_blank" rel="nofollow noreferrer">Demo</a>
     <img src = "../assets/img/Code Icon.svg" alt = "code" class="code">
-    <a class="project__footer--link" href="${item.html_url}" target="_blank" rel="nofollow noreferrer">Github</a>
+    <a class="project__footer--github" href="${item.html_url}" target="_blank" rel="nofollow noreferrer">Github</a>
       </footer>
 </section > `
       console.log(item.name)

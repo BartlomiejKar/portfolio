@@ -6,59 +6,65 @@
 body{
     border: 10px solid #171F3F;
 }
-
-
-.about__me::after {
-    content:"";
-    background-color: gray;
-    border-radius: 8px;
-    display: block;
-    margin-bottom: 24px;
-    max-width: 200px;
-    width: 100%;
-    height: 2px;
-
-}
-.about__img{
+.about__img {
     width: 100.21px;
     height: 100.21px;
     margin-left: 138px;
-    border: 4px solid #FFFFFF;
-    background: #CBD2D9;
+    margin-top: 128px;
+    padding:3px;
+    border: 4px solid  #CBD2D9;
+    background-color: #FFFFFF;
     border-radius: 50%;
+    
 }
 .about__title {
     margin-left: 128px;
     width: 300px;
+   
 }
 .about__paragraph{
     margin-left: 128px;
     width:300px;
 }
-
+.about__email, .contact__email {
+margin-left:128px;
+font-family: Poppins;
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 32px;
+color: #0593FB;
+text-decoration: none;
+}
+.about__email::after, .contact__email::after {
+    content: "";
+    background: #0593FB;
+border-radius: 41px;
+height: 2px;
+width:220px;
+display:block;
+margin-left: 128px;
+}
 
 
 .skills__title{
-    // margin-left: 128px;
-    margin-right: 128px;
-    // border-bottom: 1px solid grey
+    margin-left: 128px;
+    font-weight: 600;
+    font-size: 36px;
 }
 .skills__article{
     display:grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(2, 1fr); 
 }
 
 .skills__article--title {
-    grid-area: 1/1/1/1;
-    width: 379px;
+     width: 379px;
     height: 44px;
     margin-left: 128px;
- 
-
 }
-.skills__article--title::before, .knowing__title::before, .learn__title::before {
+ .skills__article--title::before, .knowing__title::before, .learn__title::before {
     content: '';
-    background-color: green;
+    background-color: #2251CC;
     border-radius: 8px;
     display: block;
     margin-bottom: 24px;
@@ -69,62 +75,82 @@ body{
 .skills__list {
     display:grid;
     grid-template-columns: repeat(2, 1fr);  
+    list-style-type: none;
+    margin-top: 40px;
 }
+.skills__list--element, .knowing__list--element, .learn__list--element{
+    padding: 2px;
+    margin-left: 5px;
+    display: flex;
+    text-align: center;
+     
+}
+.skills__list--element::before {
+   content: "";
+   background-image: url("../assets/img/check-circle.svg");
+   width: 18px;
+height: 18px;
+margin-right: 12px;
+}
+
 
 .knowing {
 display: grid;
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(2, 1fr);
 }
 
-.knowing__title{
-    grid-area: 1/1/1/1;
+.knowing__title {
     width: 379px;
     height: 44px;
     margin-left: 128px;
 }
-// .knowing__title::before {
-//     content: '';
-//     background-color: green;
-//     border-radius: 8px;
-//     display: block;
-//     margin-bottom: 24px;
-//     max-width: 80px;
-//     width: 50%;
-//     height: 4px;
-// }
+.knowing__title::before{
+    background-color: #653CAD;
+}
+
 .knowing__list {
     display:grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);  
+    list-style-type: none;
+    margin-top: 40px;
+}
+.knowing__list--element::before{
+    content: "";
+    background-image: url("../assets/img/circle\ dark\ blue.svg");
+    width: 18px;
+ height: 17px;
+ margin-right: 12px;
+
+}
+.learn__list--element::before{
+    content: "";
+    background-image: url("../assets/img/green\ circle.svg");
+    width: 16px;
+ height: 16px;
+ margin-right: 12px;
 }
 
 .learn {
     display:grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
 }
 .learn__title {
-    grid-area: 1/1/1/1;
     width: 379px;
     height: 44px;
     margin-left: 128px;
 }
-// .learn__title::before {
-//     content: '';
-//     background-color: green;
-//     border-radius: 8px;
-//     display: block;
-//     margin-bottom: 24px;
-//     max-width: 80px;
-//     width: 50%;
-//     height: 4px;
-// }
+.learn__title::before{
+    
+    background-color: #06C847;
+}
+
 .learn__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
  .github {
- 
-    height: 48px;
+     height: 48px;
     margin-bottom: 20px;
  }
  .section__projects {
@@ -145,12 +171,12 @@ margin-left: 128px;
 }
 .projects__title::after, .skills__title::after {
     content: '';
-    background-color: gray;
+    background-color:  #CBD2D9;
+    opacity: 0.5;
     border-radius: 8px;
     display: block;
     margin-bottom: 24px;
-    max-width: 200px;
-    width: 100%;
+    margin-right: 128px;
     height: 2px;
 }
 
@@ -188,13 +214,23 @@ margin-left: 128px;
     padding: .625rem 2rem;
     
 }
-.project__footer--link {
+.project__footer--demo{
     text-decoration: none;
     margin-left: 5px;
     margin-right: 5px;
+    border-right: 2px solid #CBD2D9;;
+    padding: 5px;
+    
+
 }
+.project__footer--github{
+    text-decoration: none;
+    padding: 5px;
+}
+    
 .contact {
     background: #171F3F;
+   
     
 }
 .contact__div{
@@ -205,38 +241,43 @@ margin-left: 128px;
    }
 
 .contact__title {
-    font-style: normal;
+font-style: normal;
 font-weight: 600;
 font-size: 32px;
 line-height: 44px;
 margin-top: 128px;
+margin-left: 128px;
 
 }
 .contact__title::before {
-    background: #0593FB;
+background: #0593FB;
 border-radius: 8px;
 content: "";
 width: 80px;
 height: 4px;
 display:block;
+margin-bottom: 24px;
 
 
 }
 .contact__paragraph {
-    font-style: normal;
+font-style: normal;
 font-weight: 300;
 font-size: 20px;
 line-height: 36px;
+margin-left: 128px;
 }
 .contact__icons{
     display: flex;
+    margin-left: 128px;
+    padding: 0;
 }
 .contact__icons--image{
-    width:30px;
-    height: 30px;
+    width:35px;
+    height: 35px;
     
 }
 .contact__li{
     list-style-type: none;
-    margin:5px;
+  
 }
