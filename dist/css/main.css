@@ -594,6 +594,11 @@ template {
 .contact__li {
   list-style-type: none; }
 
+@media (max-width: 640px) {
+  body {
+    background: #E3E6EA;
+    border: none !important; } }
+
 body {
   border: 10px solid #171F3F; }
 
