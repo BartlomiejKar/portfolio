@@ -320,11 +320,13 @@ template {
 
 .about__title {
   margin-left: 128px;
-  width: 300px; }
+  width: 781px; }
 
 .about__paragraph {
   margin-left: 128px;
-  width: 300px; }
+  width: 681px;
+  height: 108px;
+  font-size: 20px; }
 
 .about__email, .contact__email {
   margin-left: 128px;
@@ -341,9 +343,14 @@ template {
   background: #0593FB;
   border-radius: 41px;
   height: 2px;
-  width: 220px;
+  width: 275px;
   display: block;
   margin-left: 128px; }
+
+.idLink {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #0593FB; }
 
 .skills__title {
   margin-left: 128px;

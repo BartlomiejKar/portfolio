@@ -20,7 +20,7 @@ if ('serviceWorker' in navigator) {
 console.log(`Hello world!`);
 
 const list = document.querySelector(".projects__div")
-fetch("https://api.github.com/users/BartlomiejKar/repos?sort=created")
+fetch("https://api.github.com/users/BartlomiejKar/repos?sort=updated&direction=desc")
   .then(response => response.json())
   .then(data => {
     const repos = data;
@@ -40,7 +40,7 @@ fetch("https://api.github.com/users/BartlomiejKar/repos?sort=created")
       </footer>
 </section > `
       console.log(item.name)
-      console.log(item)
+      console.log(item.homepage)
     }
 
   })
