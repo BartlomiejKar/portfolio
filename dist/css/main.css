@@ -311,7 +311,7 @@ template {
 .about {
   max-width: 1184px;
   margin: 0 auto;
-  padding: 112px 0 200px; }
+  padding: 112px 0 190px; }
 
 .about__img {
   width: 100.21px;
@@ -351,9 +351,25 @@ template {
           text-decoration-line: underline;
   color: #0593FB; }
 
+.skills {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 112px 0 190px; }
+
 .skills__title {
   font-weight: 600;
-  font-size: 36px; }
+  font-size: 2.25rem;
+  font-style: normal;
+  margin: 0; }
+
+.skills__title::after {
+  content: '';
+  background-color: #CBD2D9;
+  opacity: 0.5;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 24px;
+  height: 2px; }
 
 .skills__article {
   display: -ms-grid;
@@ -366,9 +382,9 @@ template {
   height: 208px; }
 
 .skills__article-title {
-  width: 379px;
-  height: 44px;
-  margin-left: 8px; }
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0; }
 
 .skills__article-title::before, .knowing__title::before, .learn__title::before {
   content: '';
@@ -386,7 +402,10 @@ template {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   list-style-type: none;
-  margin-top: 40px; }
+  margin-top: 40px;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem; }
 
 .skills__list-element, .knowing__list-element, .learn__list-element {
   padding: 2px;
@@ -398,6 +417,7 @@ template {
 
 .skills__list-element::before {
   content: "";
+  display: block;
   background-image: url("../assets/img/check-circle.svg");
   width: 18px;
   height: 18px;
@@ -414,9 +434,9 @@ template {
   height: 208px; }
 
 .knowing__title {
-  width: 379px;
-  height: 44px;
-  margin-left: 8px; }
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0; }
 
 .knowing__title::before {
   background-color: #F8054E; }
@@ -427,17 +447,22 @@ template {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   list-style-type: none;
-  margin-top: 40px; }
+  margin-top: 40px;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem; }
 
 .knowing__list-element::before {
   content: "";
-  background-image: url("../assets/img/red checked.svg");
+  display: block;
+  background-image: url("../assets/img//red checked.svg");
   width: 16px;
   height: 16px;
   margin-right: 12px; }
 
 .learn__list-element::before {
   content: "";
+  display: block;
   background-image: url("../assets/img/green circle.svg");
   width: 16px;
   height: 16px;
@@ -454,9 +479,9 @@ template {
   height: 208px; }
 
 .learn__title {
-  width: 379px;
-  height: 44px;
-  margin-left: 8px; }
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0; }
 
 .learn__title::before {
   background-color: #06C847; }
@@ -465,7 +490,12 @@ template {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  list-style-type: none;
+  margin-top: 40px;
+  -webkit-column-gap: 1.5rem;
+     -moz-column-gap: 1.5rem;
+          column-gap: 1.5rem; }
 
 .github {
   height: 48px;
@@ -485,7 +515,7 @@ template {
   width: 580px;
   height: 48px; }
 
-.projects__title::after, .skills__title::after {
+.projects__title::after {
   content: '';
   background-color: #CBD2D9;
   opacity: 0.5;
