@@ -308,10 +308,14 @@ template {
 [hidden] {
   display: none; }
 
+.about {
+  max-width: 1184px;
+  margin: 0 auto;
+  padding: 112px 0 200px; }
+
 .about__img {
   width: 100.21px;
   height: 100.21px;
-  margin-left: 138px;
   margin-top: 128px;
   padding: 3px;
   border: 4px solid  #CBD2D9;
@@ -319,33 +323,28 @@ template {
   border-radius: 50%; }
 
 .about__title {
-  margin-left: 128px;
-  width: 781px; }
+  max-width: 781px;
+  font-size: 2.5rem;
+  margin: 2rem 0 1rem; }
 
 .about__paragraph {
-  margin-left: 128px;
-  width: 681px;
-  height: 108px;
-  font-size: 20px; }
+  line-height: 2.25rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 300;
+  max-width: 781px; }
 
 .about__email, .contact__email {
-  margin-left: 128px;
   font-family: Poppins;
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 32px;
+  font-size: 1.25rem;
+  margin-top: 2.25rem;
   color: #0593FB;
-  text-decoration: none; }
-
-.about__email::after, .contact__email::after {
-  content: "";
-  background: #0593FB;
-  border-radius: 41px;
-  height: 2px;
-  width: 275px;
-  display: block;
-  margin-left: 128px; }
+  text-decoration: none;
+  width: 100%;
+  margin-bottom: 8px;
+  border-bottom: 2px solid #0593FB; }
 
 .idLink {
   -webkit-text-decoration-line: underline;
@@ -353,7 +352,6 @@ template {
   color: #0593FB; }
 
 .skills__title {
-  margin-left: 128px;
   font-weight: 600;
   font-size: 36px; }
 
@@ -364,8 +362,6 @@ template {
   grid-template-columns: repeat(2, 1fr);
   background: #EAF2F9;
   border-radius: 8px;
-  margin-left: 120px;
-  margin-right: 112px;
   margin-bottom: 20px;
   height: 208px; }
 
@@ -414,8 +410,6 @@ template {
   grid-template-columns: repeat(2, 1fr);
   background: #FDF3F7;
   border-radius: 8px;
-  margin-left: 120px;
-  margin-right: 112px;
   margin-bottom: 20px;
   height: 208px; }
 
@@ -456,8 +450,6 @@ template {
   grid-template-columns: repeat(2, 1fr);
   background: #EAF9EF;
   border-radius: 8px;
-  margin-left: 120px;
-  margin-right: 112px;
   margin-bottom: 20px;
   height: 208px; }
 
@@ -491,8 +483,7 @@ template {
   font-size: 36px;
   line-height: 48px;
   width: 580px;
-  height: 48px;
-  margin-left: 128px; }
+  height: 48px; }
 
 .projects__title::after, .skills__title::after {
   content: '';
@@ -501,7 +492,6 @@ template {
   border-radius: 8px;
   display: block;
   margin-bottom: 24px;
-  margin-right: 128px;
   height: 2px; }
 
 .projects__div {
@@ -561,8 +551,7 @@ template {
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
-  margin-top: 128px;
-  margin-left: 128px; }
+  margin-top: 128px; }
 
 .contact__title::before {
   background: #0593FB;
@@ -577,14 +566,12 @@ template {
   font-style: normal;
   font-weight: 300;
   font-size: 20px;
-  line-height: 36px;
-  margin-left: 128px; }
+  line-height: 36px; }
 
 .contact__icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 128px;
   padding: 0; }
 
 .contact__icons-image {
@@ -594,15 +581,16 @@ template {
 .contact__li {
   list-style-type: none; }
 
-@media (max-width: 640px) {
-  body {
-    background: #E3E6EA;
-    border: none !important; } }
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
 
 body {
   border: 10px solid #171F3F; }
 
 html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   scroll-behavior: smooth; }

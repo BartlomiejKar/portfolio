@@ -1,9 +1,64 @@
-@media(max-width: 640px) {
+@media(max-width: $mobile) {
+html {
+    font-size: 12px;
+}
     body {
             background: #E3E6EA;
-            border: none !important;
-           
-            
-        };
+            // border: none;
+    
+           }
+           .about {
+            //    width:100%;
+           }
+
+           .about__title, .about__paragraph, .about__email, .about__email::after {
+               margin-left: 32px;
+           }
+           .about__img {
+               margin-left: 32px;
+           }
+           .about__paragraph {
+               height: 0%;
+               font-family: Poppins;
+               font-style: normal;
+               font-weight: 300;
+               font-size: 14px;
+               line-height: 26px;
+               color: #52606D;
+           }
+           .about__title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 26px;
+            line-height: 36px;
+           }
+        //    .skills__article-title::before, .knowing__title::before, .learn__title::before {
+        //     content: '';
+        //     background-color: #2251CC;
+        //     border-radius: 8px;
+        //     display: block;
+        //     margin-bottom: 24px;
+        //     max-width: 80px;
+        //     width: 50%;
+        //     height: 4px;
+        
+           .skills {
+            display: flex;
+            flex-direction: column
+           }
+           .skills__title {
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+           }
+           .skills__list {
+               display:flex;
+               flex-direction: column;
+               text-align: left;
+              
+           }
     }
     
