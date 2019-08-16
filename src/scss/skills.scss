@@ -25,7 +25,7 @@ grid-template-columns: repeat(2,1fr);
 background: #EAF2F9;
 border-radius: 8px;
 margin-bottom: 20px;
-height: 208px;
+// height: 208px;
 }
 .skills__article-title {
 font-weight: 600;
@@ -44,7 +44,7 @@ height: 4px;
 }
 .skills__list {
 display:grid;
-grid-template-columns: repeat(2, 1fr);  
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 list-style-type: none;
 margin-top: 40px;
 column-gap: 1.5rem;
@@ -69,7 +69,7 @@ grid-template-columns: repeat(2,1fr);
 background: #FDF3F7;
 border-radius: 8px;
 margin-bottom: 20px;
-height: 208px;
+// height: 208px;
 }
 .knowing__title {
 font-weight: 600;
@@ -81,7 +81,7 @@ background-color: #F8054E;
 }
 .knowing__list {
 display:grid;
-grid-template-columns: repeat(2, 1fr);  
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
 list-style-type: none;
 margin-top: 40px;
 column-gap: 1.5rem;
@@ -108,7 +108,7 @@ grid-template-columns: repeat(2,1fr);
 background: #EAF9EF;
 border-radius: 8px;
 margin-bottom: 20px;
-height: 208px;
+// height: 208px;
 }
 .learn__title {
 font-weight: 600;
@@ -120,7 +120,7 @@ background-color: #06C847;
 }
 .learn__list {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
+grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
 list-style-type: none;
 margin-top: 40px;
 column-gap: 1.5rem;

@@ -2,27 +2,21 @@
 html {
     font-size: 12px;
 }
-    body {
+    .body {
             background: #E3E6EA;
-            // border: none;
+            border: none;
     
            }
            .about {
-            //    width:100%;
+           max-width: 340px;
            }
 
-           .about__title, .about__paragraph, .about__email, .about__email::after {
-               margin-left: 32px;
-           }
-           .about__img {
-               margin-left: 32px;
-           }
            .about__paragraph {
                height: 0%;
                font-family: Poppins;
                font-style: normal;
                font-weight: 300;
-               font-size: 14px;
+               font-size: 0.9rem;
                line-height: 26px;
                color: #52606D;
            }
@@ -30,35 +24,47 @@ html {
             font-family: Poppins;
             font-style: normal;
             font-weight: 600;
-            font-size: 26px;
+            font-size: 1.6rem;
             line-height: 36px;
            }
-        //    .skills__article-title::before, .knowing__title::before, .learn__title::before {
-        //     content: '';
-        //     background-color: #2251CC;
-        //     border-radius: 8px;
-        //     display: block;
-        //     margin-bottom: 24px;
-        //     max-width: 80px;
-        //     width: 50%;
-        //     height: 4px;
-        
            .skills {
-            display: flex;
-            flex-direction: column
+               display: grid;
+               grid-template-columns: 1fr;
+               padding: 8rem 0 0;
+               max-width: 370px;
            }
-           .skills__title {
-            font-family: Poppins;
-            font-style: normal;
-            font-weight: 600;
-            font-size: 24px;
-            line-height: 32px;
+       .skills__title {
+        text-align: center;
+        font-size: 1.5rem;
            }
-           .skills__list {
-               display:flex;
-               flex-direction: column;
-               text-align: left;
-              
-           }
+        .skills__article {
+            display:grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            height: 25rem;
+        }
+        .skills__list {
+            display:flex;
+            flex-direction: column;
     }
-    
+    .knowing {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        height: 25rem;
+    }
+    .knowing__list {
+        display:flex;
+        flex-direction: column;
+}
+.learn {
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    height: 25rem;
+}
+.learn__list {
+    display:flex;
+    flex-direction: column;
+}
+}
