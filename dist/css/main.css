@@ -509,9 +509,8 @@ template {
 .projects__title {
   font-style: normal;
   font-weight: 600;
-  font-size: 36px;
+  font-size: 2.25rem;
   line-height: 48px;
-  width: 580px;
   height: 48px; }
 
 .projects__title::after {
@@ -615,7 +614,7 @@ template {
   html {
     font-size: 12px; }
   .body {
-    background: #E3E6EA;
+    background: #ffffff;
     border: none; }
   .about {
     max-width: 340px; }
@@ -638,7 +637,6 @@ template {
     display: grid;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 8rem 0 0;
     max-width: 370px; }
   .skills__title {
     text-align: center;
@@ -690,7 +688,20 @@ template {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
-            flex-direction: column; } }
+            flex-direction: column; }
+  .projects {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    max-width: 500px; }
+  .projects__title {
+    text-align: center; }
+  .projects__div {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr; } }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;

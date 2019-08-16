@@ -3,7 +3,7 @@ html {
     font-size: 12px;
 }
     .body {
-            background: #E3E6EA;
+            background: #ffffff;
             border: none;
     
            }
@@ -30,7 +30,6 @@ html {
            .skills {
                display: grid;
                grid-template-columns: 1fr;
-               padding: 8rem 0 0;
                max-width: 370px;
            }
        .skills__title {
@@ -66,5 +65,17 @@ html {
 .learn__list {
     display:flex;
     flex-direction: column;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 500px;
+}
+.projects__title {
+    text-align: center;
+}
+.projects__div {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 }
