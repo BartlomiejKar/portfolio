@@ -30,7 +30,6 @@ html {
            .skills {
                display: grid;
                grid-template-columns: 1fr;
-               max-width: 370px;
            }
        .skills__title {
         text-align: center;
@@ -66,10 +65,12 @@ html {
     display:flex;
     flex-direction: column;
 }
+.skills__list-element::before, .knowing__list-element::before, .learn__list-element::before {
+    background-size: contain;
+}
 .projects {
     display: grid;
     grid-template-columns: 1fr;
-    max-width: 500px;
 }
 .projects__title {
     text-align: center;
