@@ -32,7 +32,7 @@ font-weight: 600;
 line-height: 44px;
 margin: 0;
 }
-.skills__article-title::before, .knowing__title::before, .learn__title::before {
+.skills__article-title::before, .courses__title::before, .learn__title::before {
 content: '';
 background-color: #2251CC;
 border-radius: 8px;
@@ -49,7 +49,7 @@ list-style-type: none;
 margin-top: 40px;
 column-gap: 1.5rem;
 }
-.skills__list-element, .knowing__list-element, .learn__list-element{
+.skills__list-element, .courses__list-element, .learn__list-element{
 padding: 2px;
 margin-left: 5px;
 display: flex;
@@ -64,7 +64,7 @@ height: 18px;
 margin-right: 12px;
 background-size: contain;
 }
-.knowing {
+.courses {
 display:grid;
 grid-template-columns: repeat(2,1fr);
 background: #FDF3F7;
@@ -72,22 +72,22 @@ border-radius: 8px;
 margin-bottom: 20px;
 // height: 208px;
 }
-.knowing__title {
+.courses__title {
 font-weight: 600;
 line-height: 44px;
 margin: 0;
 }
-.knowing__title::before{
+.courses__title::before{
 background-color: #F8054E;
 }
-.knowing__list {
+.courses__list {
 display:grid;
 grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); 
 list-style-type: none;
 margin-top: 40px;
 column-gap: 1.5rem;
 }
-.knowing__list-element::before{
+.courses__list-element::before{
 content: "";
 display:block;
 background-image: url("../assets/img//red\ checked.svg");
