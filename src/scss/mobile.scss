@@ -39,21 +39,26 @@ html {
             display:grid;
             grid-template-columns: 1fr;
             grid-template-rows: repeat(2, 1fr);
-            height: 25rem;
+            height: 30rem;
         }
         .skills__list {
             display:flex;
             flex-direction: column;
     }
-    .knowing {
+    .courses {
         display:grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 1fr);
         height: 25rem;
     }
-    .knowing__list {
+    .courses__list {
         display:flex;
         flex-direction: column;
+}
+
+.courses__list-element {
+    display: flex;
+    text-align: left;
 }
 .learn {
     display:grid;
@@ -65,9 +70,7 @@ html {
     display:flex;
     flex-direction: column;
 }
-.skills__list-element::before, .knowing__list-element::before, .learn__list-element::before {
-    background-size: contain;
-}
+
 .projects {
     display: grid;
     grid-template-columns: 1fr;
@@ -78,5 +81,9 @@ html {
 .projects__div {
     display: grid;
     grid-template-columns: 1fr;
+}
+.contact__div {
+    margin-left: 16px;
+    margin-right: 16px;
 }
 }

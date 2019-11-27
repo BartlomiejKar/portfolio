@@ -614,7 +614,7 @@ template {
 .contact__li {
   list-style-type: none; }
 
-@media (max-width: 767px) {
+@media (max-width: 893px) {
   html {
     font-size: 12px; }
   .body {
@@ -651,7 +651,7 @@ template {
     grid-template-columns: 1fr;
     -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
-    height: 25rem; }
+    height: 30rem; }
   .skills__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -660,7 +660,7 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .knowing {
+  .courses {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
@@ -668,7 +668,7 @@ template {
     -ms-grid-rows: (1fr)[2];
     grid-template-rows: repeat(2, 1fr);
     height: 25rem; }
-  .knowing__list {
+  .courses__list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -676,6 +676,11 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
+  .courses__list-element {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left; }
   .learn {
     display: -ms-grid;
     display: grid;
@@ -692,8 +697,6 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; }
-  .skills__list-element::before, .knowing__list-element::before, .learn__list-element::before {
-    background-size: contain; }
   .projects {
     display: -ms-grid;
     display: grid;
@@ -705,7 +708,10 @@ template {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .contact__div {
+    margin-left: 16px;
+    margin-right: 16px; } }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
